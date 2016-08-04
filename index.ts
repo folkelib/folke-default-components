@@ -1,5 +1,5 @@
 ﻿import * as ko from "knockout";
-import * as folke from "./index";
+import * as folke from "folke-core";
 
 class ConfirmPopup {
     title: string;
@@ -11,19 +11,19 @@ class ConfirmPopup {
     }
 
     confirm = () => {
-        folke.application.hidePopin();
+        folke.default.hidePopin();
         this.parameters.resolve(true);
     }
 
     cancel = () => {
-        folke.application.hidePopin();
+        folke.default.hidePopin();
     }
 }
 
 export function register() {
     ko.components.register('popin-close-button', {
         template: '<button type="button" data-bind="click: close" class="close"><span class="fa fa-close"></span></button>',
-        viewModel: { instance: { close: function() { folke.application.hidePopin(); } } }
+        viewModel: { instance: { close: function() { folke.default.hidePopin(); } } }
     });
 
     ko.components.register('folke-view', {
@@ -34,7 +34,7 @@ export function register() {
 <!-- ko foreach: pages -->
 <div data-bind="component: { name: id, params: params }, css: id"></div>
 <!-- /ko -->`,
-        viewModel: { instance: folke.application }
+        viewModel: { instance: folke.default }
     });
 
     ko.components.register('popin-confirm', {

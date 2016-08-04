@@ -1,0 +1,25 @@
+{
+  "name": "folke-default-components",
+  "version": "1.0.0",
+  "description": "Default components for folke-core",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublish": "tsc -p ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/folkelib/folke-default-components.git"
+  },
+  "author": "Sidoine De Wispelaere",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/folkelib/folke-default-components/issues"
+  },
+  "homepage": "https://github.com/folkelib/folke-default-components#readme",
+  "typings": "dist/index.d.ts",
+  "dependencies": {
+    "folke-core": "^1.0.7",
+    "es6-promise": "^3.2.1"
+  }
+}
