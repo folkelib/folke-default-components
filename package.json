@@ -1,6 +1,6 @@
 {
   "name": "folke-default-components",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Default components for folke-core",
   "main": "dist/index.js",
   "scripts": {
