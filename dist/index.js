@@ -7,7 +7,7 @@ var ConfirmPopup = (function () {
         this.parameters = parameters;
         this.confirm = function () {
             folke.default.hidePopin();
-            _this.parameters.resolve(true);
+            _this.parameters.resolve && _this.parameters.resolve(true);
         };
         this.cancel = function () {
             folke.default.hidePopin();

@@ -12,7 +12,7 @@ class ConfirmPopup {
 
     confirm = () => {
         folke.default.hidePopin();
-        this.parameters.resolve(true);
+        this.parameters.resolve && this.parameters.resolve(true);
     }
 
     cancel = () => {

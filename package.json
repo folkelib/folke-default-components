@@ -19,7 +19,11 @@
   "homepage": "https://github.com/folkelib/folke-default-components#readme",
   "typings": "dist/index.d.ts",
   "dependencies": {
-    "folke-core": "^1.0.7",
-    "es6-promise": "^3.2.1"
+    "folke-core": "~1.1",
+    "knockout": "~3.4.1",
+    "@types/knockout": "~3.4.37"
+  },
+  "devDependencies": {
+    "typescript": "~2.1"
   }
 }
